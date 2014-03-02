@@ -14,15 +14,22 @@ This is a block of text, denoted above by "--- &text". Blocks of text will be di
 
 This is a command question, denoted above by "--- &cmd_question". Command questions require the user to enter a valid R expression at the prompt. As an example, let's have the user store the result of `3 + 7` in a new variable called `z`.
 
+*** .correct_ans
 ```{r}
-z <- 3 + 7  # This is an R expression that will answer the question correctly
+# This is an R expression that will answer the question correctly
+z <- 3 + 7
 ```
 
 *** .hint
 This is a hint, which the user will see if he or she answers the question incorrectly. In this case, we might be kind and suggest that they type `z <- 3 + 7`.
 
 *** .ans_tests
-Answer tests go here. If omitted, the default answer test requires the user to enter the same R expression you specified in the code chunk above. See swirl documentation for more details about answer testing.
+```{r}
+# Answer tests go here. If omitted, the default answer test requires 
+# the user to enter the same R expression you specified in the code 
+# chunk above. See swirl documentation for more details about answer 
+# testing.
+```
 
 --- &mult_question
 
